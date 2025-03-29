@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock Paper Scissors!</title>
+
+		<!-- <script src="."></script> -->
+		<script src="javascript.js" defer></script>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<div class="game-container">
+			<h1 class="title">Rock Paper Scissors</h1>
+
+			<!-- Round Selector -->
+			<div class="rounds-container">
+				<h6>Choose rounds below! You can set a minimum of 3 and a maximum of 7!</h6>
+				<label for="rounds">First to:</label>
+				<input id="rounds" name="rounds" type="number" value="3" min="3" max="7" />
+				<span> wins!</span>
+			</div>
+			<!-- Computer's Choice -->
+			<div class="computer-choice-container">
+				<p>Computer says:</p>
+				<p class="computer-choice">You first</p>
+			</div>
+			<!-- Player Choices -->
+			<div class="buttons">
+				<button id="btn-rock" value="rock">✊ Rock</button>
+				<button id="btn-paper" value="paper">✋ Paper</button>
+				<button id="btn-scissors" value="scissors">✌️ Scissors</button>
+			</div>
+			<!-- Round Result -->
+			<div class="round-result-container">
+				<h3>Round result:</h3>
+				<p class="round-result">Make your move!</p>
+			</div>
+
+			<div class="scores-container">
+				<h3 class="scores-title">Scores</h3>
+				<div class="scores-display">
+					<div class="score-box">
+						<h4>Human:</h4>
+						<h4 class="human-score">0</h4>
+					</div>
+					<div class="score-box">
+						<h4>Computer:</h4>
+						<h4 class="computer-score">0</h4>
+					</div>
+				</div>
+			</div>
+			<div class="final-result-container">
+				<h3 class="final-result-title"><strong>Final result:</strong></h3>
+				<div class="final-result-display">Game not finished...</div>
+			</div>
+
+			<button class="restart-game" style="cursor: pointer">Restart Game</button>
+		</div>
+	</body>
+</html>

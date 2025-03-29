@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: rgba(0, 79, 13, 0.649);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+	border-radius: 10%;
+}
+
+.game-container {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 30px;
+	width: 500px;
+	border-style: groove;
+	border-color: #8e000c16;
+	border-radius: 8%;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+h6 {
+	margin: 10px;
+}
+
+.rounds-container {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.rounds-container input {
+	width: 50px;
+	padding: 5px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+}
+
+.computer-choice-container,
+.round-result-container,
+.scores-container,
+.final-result-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.scores-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+.scores-display {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.score-box {
+	display: flex;
+	display: row;
+	gap: 5px;
+}
+
+.score-box h4 {
+	margin-bottom: 5px;
+}
+
+.buttons {
+	margin: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+button {
+	border: none;
+	padding: 12px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+	width: 120px;
+}
+
+#btn-rock {
+	background: #8e000c;
+	color: white;
+}
+
+#btn-paper {
+	background: #065527;
+	color: white;
+}
+
+#btn-scissors {
+	background: #003c79;
+	color: white;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.restart-game {
+	margin-top: 20px;
+	background: #52aef5;
+	color: white;
+}
